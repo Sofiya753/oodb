@@ -1,3 +1,5 @@
+package lab1;
+
 abstract class Person {
     private String firstName;
     private String lastName;

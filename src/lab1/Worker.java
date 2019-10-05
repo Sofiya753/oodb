@@ -1,3 +1,5 @@
+package lab1;
+
 public class Worker extends Person {
     private Long id;
     private String position;

@@ -1,3 +1,5 @@
+package lab1;
+
 public class Library extends Person {
     Boolean yesBook;
     String code;
