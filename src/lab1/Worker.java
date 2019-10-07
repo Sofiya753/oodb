@@ -1,13 +1,14 @@
 package lab1;
 
 public class Worker extends Person {
-    private Long id;
-    private String position;
-    private String code;
+     String code;
+     String position;
 
-    public Worker(String firstName, String lastName, String phoneNumber, String email, String position, String code) {
-        super(firstName, lastName, phoneNumber, email);
-        this.position = position;
+    public String getCode() {
+        return code;
+    }
+
+    public void setCode(String code) {
         this.code = code;
     }
 
@@ -19,11 +20,13 @@ public class Worker extends Person {
         this.position = position;
     }
 
-    public String getCode() {
-        return code;
-    }
 
-    public void setCode(String code) {
+    public Worker(String firstName, String lastName, String phoneNumber, String email, String position, String code) {
+        super(firstName, lastName, phoneNumber, email);
+        this.position = position;
         this.code = code;
     }
+
+
+
 }

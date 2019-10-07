@@ -1,44 +1,43 @@
 package lab1;
 
-public class Order extends Person {
-    private Long id;
-    private String book;
-    private String autor;
-    private String code;
+import java.util.Collection;
+import java.util.Date;
 
-    Order(String firstName, String lastName, String phoneNumber, String email) {
-        super(firstName, lastName, phoneNumber, email);
+public class Order  {
+    Book book;
+    Date start;
+    Date end;
+    boolean availability;
+
+    public Book getBook() {
+        return book;
     }
 
-    public String getBook(){
-        return this.book;
+    public void setBook(Book book) {
+        this.book = book;
     }
 
-    public String getAutor(){
-        return this.autor;
+    public Date getStart() {
+        return start;
     }
 
-    public Long getId(){
-        return this.id;
+    public void setStart(Date start) {
+        this.start = start;
     }
 
-    public String getCode(){
-        return this.code;
+    public Date getEnd() {
+        return end;
     }
 
-    public void setId(Long f){
-        this.id=f;
+    public void setEnd(Date end) {
+        this.end = end;
     }
 
-    public void setBook(String name){
-        this.book=name;
+    public boolean isAvailability() {
+        return availability;
     }
 
-    public void setAutor(String name){
-        this.autor=name;
-    }
-
-    public void setCode(String c){
-        this.code=c;
+    public void setAvailability(boolean availability) {
+        this.availability = availability;
     }
 }

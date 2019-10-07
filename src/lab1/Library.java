@@ -1,39 +1,26 @@
 package lab1;
 
-public class Library extends Person {
-    Boolean yesBook;
-    String code;
-    int count;
+import java.util.Collection;
 
-    Library(String firstName, String lastName, String phoneNumber, String email) {
-        super(firstName, lastName, phoneNumber, email);
+public class Library {
+    Collection<Book> book;
+    Collection<Client>client;
+    Collection<Worker>worker;
+
+    public Collection<Book> getBook() {
+        return book;
     }
 
-    public String getCode(){
-        return this.code;
+    public void setBook(Collection<Book> book) {
+        this.book = book;
     }
 
-    public Boolean getYesBook(){
-        return this.yesBook;
-    }
-    public int getCount(){
-        return this.count;
+    public Collection<Client> getClient() {
+        return client;
     }
 
-    public void exchangeYesBook(boolean f){
-        this.yesBook=f;
-    }
-
-    public void setYesBook(boolean f){
-        this.yesBook=f;
-    }
-
-    public void setCode(String s){
-        this.code=s;
-    }
-
-    public void setCount(int c){
-        this.count=c;
+    public void setClient(Collection<Client> client) {
+        this.client = client;
     }
 }
 
