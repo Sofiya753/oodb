@@ -5,6 +5,12 @@ public class Book {
     String autor;
     String code;
 
+    public Book(String title, String autor, String code) {
+        this.title = title;
+        this.autor = autor;
+        this.code = code;
+    }
+
     public String getTitle() {
         return title;
     }
